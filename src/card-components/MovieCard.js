@@ -46,8 +46,6 @@ MovieCard.defaultProps = {
   IMDBRating: null,
   genres: ['No Genre(s) Found'],
   poster: "default"
-  // posterSrc: `http://i.imgur.com/${this.props.poster}.png`
-  // posterSrc: `http://i.${poster}.com/bJw8ndW.png`
 }
 
 // Don't forget your default props!
