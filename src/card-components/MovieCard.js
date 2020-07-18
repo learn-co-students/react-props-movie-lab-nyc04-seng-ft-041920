@@ -17,9 +17,9 @@ import CardBack from './CardBack.js';
 const posterMap = {
   'choux-maru-istanbul': cmi,
   'choux-maru-part-1': cmp1,
-  'chromeboi': cb,
+  chromeboi: cb,
   'escape-from-vim': efv,
-  'goldeneye': goldeneye,
+  goldeneye: goldeneye,
   'handsome-boy': hbmc,
   'marus-spinoff': msts,
   'terrance-king': tkr,
@@ -31,12 +31,12 @@ class MovieCard extends Component {
 
   render() {
     console.log(this.props)
+    console.log(`${this.props.poster}.png`)
 
     return (
       <div className="movie-card">
         {/* which component should receive which props? */}
-        <CardFront 
-          poster = {this.props.poster}
+        <CardFront poster={posterMap[this.props.poster]}
         />
         <CardBack 
           title = {this.props.title}
